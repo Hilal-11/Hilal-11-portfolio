@@ -1,0 +1,21 @@
+.gradient-animate-spin {
+  animation: animateRotate linear 10s infinite;
+}
+@keyframes animateRotate {
+    0% {
+      transform: rotate(0deg);
+    }100% {
+      transform: rotate(360deg);
+    }
+}
+
+.gradient-animate-spin-2 {
+  animation: animateRotate2 linear 10s infinite;
+}
+@keyframes animateRotate2 {
+    0% {
+      transform: rotate(180deg);
+    }100% {
+      transform: rotate(-36deg);
+    }
+}
