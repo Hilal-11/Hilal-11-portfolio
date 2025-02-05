@@ -28,6 +28,12 @@ import { FaCss3 } from "react-icons/fa6";
 import { SiVite } from "react-icons/si";
 import { FaPhp } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { MdHome } from "react-icons/md";
+import faizan from '../assets/faizan.jpg';
+import umer from '../assets/umer.jpg';
+import naveed from '../assets/hilalHimage.png';
+import asif from '../assets/umer.jpg';
+import sahil from '../assets/hilalHimage.png';
 
 export const skillsData = [ 
     {
@@ -174,6 +180,12 @@ export const skillsData = [
 ];
 export const navLinksScreen = [ 
     {
+        id: 0,
+        label : "Home",
+        to : "/",
+        icon : <MdHome/>
+    },
+    {
         id : 1,
         label : "Resourses",
         to : "Resourses",
@@ -186,17 +198,18 @@ export const navLinksScreen = [
         icon : <LiaConnectdevelop/>
     },
     {
-        id : 3,
-        label : "About",
-        to : "About",
-        icon : <IoPersonAdd/>
-    },
-    {
         id : 4,
         label : "Github",
         to : "Github",
         icon : <FaGithub/>
     },
+    {
+        id : 3,
+        label : "About",
+        to : "About",
+        icon : <IoPersonAdd/>
+    }
+
 ];
 export const resoursesCoursesLists = [
     {
@@ -220,7 +233,63 @@ export const resoursesCoursesLists = [
         id: 5,
         item: "Frameworks"
 
+    },
+    {   
+        id: 6,
+        item: "Roadmaps"
+
     }
+]
+export const imageFrontIcons = [ 
+    {
+        id : 1,
+        icon : <FaJs/>,
+    },
+    {
+        id : 2,
+        icon : <SiTypescript/>,
+        
+    }, {
+        id : 4,
+        icon : <RiTailwindCssFill/>,
+
+    },
+    {
+        id : 5,
+        icon : <GrReactjs/>,
+    },
+    
+    {
+        id : 8.1,
+        icon : <SiShadcnui/>
+    },
+    {
+        id : 9,
+        icon : <FaNodeJs/>,
+    },
+    {
+        id : 10,
+        icon : <SiExpress/>,
+    },
+    {
+        id : 111,
+        icon : <SiMongodb/>,
+    },
+
+    {
+        id: 101,
+        icon: <SiNextdotjs />
+    },
+    {
+        id : 14,
+        icon : <TbBrandThreejs/>,
+    },{
+        id : 16,
+        icon : <TbBrandFramerMotion/>,
+    },{
+        id : 19,
+        icon : <TbBrandReactNative/>,
+    },
 ]
 // About secession skills icons
 export const aboutSkillsIcons = [ 
@@ -357,5 +426,79 @@ export const aboutMe = {
 
     para5 : "Whether it’s building interactive 3D experiences, designing intuitive UI/UX, or developing full-stack applications, I’m committed to delivering excellence in every aspect of web development. Let’s build something extraordinary together!"
 }
+export const reviews = [
+    {
+        id: 2,
+        name: "Umer Maqbool",
+        profession: "Research and Market analyest",
+        response : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi earum placeat dolores nesciunt odit tenetur laboriosam corrupti dicta veniam? Natus accusantium optio consequatur autem qui, atque voluptatibus quia deserunt accusamus.",
+        image: umer
+    },
+    {
+        id: 3,
+        name: "Naveed Lone",
+        profession: "Computer science Student",
+        response : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi earum placeat dolores nesciunt odit tenetur laboriosam corrupti dicta veniam? Natus accusantium optio consequatur autem qui, atque voluptatibus quia deserunt accusamus.",
+        image: naveed
+    },
+    {
+        id: 4,
+        name: "Asif Khan",
+        profession: "Computer science Student",
+        response : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi earum placeat dolores nesciunt odit tenetur laboriosam corrupti dicta veniam? Natus accusantium optio consequatur autem qui, atque voluptatibus quia deserunt accusamus.",
+        image: asif
+    },
+    {
+        id: 1,
+        name: "Faizan Elahi",
+        profession : "Frontend Developer",
+        response : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi earum placeat dolores nesciunt odit tenetur laboriosam corrupti dicta veniam? Natus accusantium optio consequatur autem qui, atque voluptatibus quia deserunt accusamus.",
+        image: faizan
+        
+    },
+    {
+        id: 5,
+        name: "Sahil Saleem",
+        profession: "CS Student",
+        response : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi earum placeat dolores nesciunt odit tenetur laboriosam corrupti dicta veniam? Natus accusantium optio consequatur autem qui, atque voluptatibus quia deserunt accusamus.",
+        image: sahil
+        
+    }
+]
 
+export const youtubeVideos =  [
+    { id: 0, thumbnail: 'https://i.ytimg.com/vi/nu_pCVPKzTk/hqdefault.jpg', description: 'Learn full-stack web development in this full cour…ll learn the basics of HTML, CSS, and JavaScript.' },
+    { id: 1, thumbnail: 'https://i.ytimg.com/vi/vzGllw18DkA/hqdefault.jpg', description: 'This web programming course from Harvard Universit…off. It dives more deeply into the design and ...' },
+    { id: 2, thumbnail: 'https://i.ytimg.com/vi/zJSY8tbf_ys/hqdefault.jpg', description: 'Learn JavaScript, HTML, and CSS in this Frontend W…is massive course, you will go from no coding ...' },
+    { id: 3, thumbnail: 'https://i.ytimg.com/vi/9He4UBLyk8Y/hqdefault.jpg', description: 'Learn what technologies you should learn first to …r. Watch the full learning front end learning ...' },
+    { id: 4, thumbnail: 'https://i.ytimg.com/vi/jBzwzrDvZ18/hqdefault.jpg', description: 'This video is a full backend web development cours…you will learn everything you need to know to ...' },
+    { id: 5, thumbnail: 'https://i.ytimg.com/vi/PlxWf493en4/hqdefault.jpg', description: "If you're an absolute beginner in web development,…ML here. This video covers setting up an HTML ..." },
+    { id: 6, thumbnail: 'https://i.ytimg.com/vi/kUMe1FH4CHE/hqdefault.jpg', description: 'Learn HTML in this complete course for beginners. …utorial to help you learn web development skills.' },
+    { id: 7, thumbnail: 'https://i.ytimg.com/vi/_CXwZ5xyFno/hqdefault.jpg', description: 'Learn how to use DeepSeek-R1 in this crash course …he innovative reinforcement learning approach ...' },
+    { id: 8, thumbnail: 'https://i.ytimg.com/vi/dX8396ZmSPk/hqdefault.jpg', description: "This course is an in-depth introduction to web dev…for complete beginners. We'll start with HTML ..." },
+    { id: 9, thumbnail: 'https://i.ytimg.com/vi/MsnQ5uepIaE/hqdefault.jpg', description: 'In this frontend web development project tutorial,… with HTML, CSS, JavaScript, TypeScript, & React.' },
+    { id: 10, thumbnail: 'https://i.ytimg.com/vi/tN6oJu2DqCM/hqdefault.jpg', description: 'Learn what technologies you should learn first to …er. Watch the full learning back end learning ...' },
+    { id: 11, thumbnail: 'https://i.ytimg.com/vi/XC2B_fE7S0g/hqdefault.jpg', description: 'Finding your first job in a new field can be scary…on questions people have when getting started ...' },
+    { id: 12, thumbnail: 'https://i.ytimg.com/vi/e2nkq3h1P68/hqdefault.jpg', description: 'Learn how to write accessible HTML by solving codi…llenges. Click here to get to the challenges: ...' },
+    { id: 13, thumbnail: 'https://i.ytimg.com/vi/a_iQb1lnAEQ/hqdefault.jpg', description: 'Learn HTML and CSS from scratch by building 6 proj…oding challenges. Go here for the interactive ...' },
+]
+
+
+export const footerData = [
+    {
+        id: 1,
+        projects : ["Crypto Tracker" , "Explore Gradients" , "Epic Games Portal" , "Notes Application" , "Unreac Engine Assets" , "Youtube Clone"]
+    },
+    {
+        id: 1,
+        courses: ["Frontend Developmnt" , "Backend Development" , "Javascript" , "React Ecosystem" , "Threejs" , "React Three Fiber"]
+    },
+    {
+        id: 1,
+        github: ["Web Fundamentals" ,"Javascript/Typescript" , "React Essentials" , "Data Structures Algorithms" , "C/C++/Java/Php/Python" ,
+             "Backend Development" , "Frammer Motion", "React Three Fiber" , "Three-Js"]
+    }
+    
+]
+export const footerInfo = "Discover my latest projects, courses, and GitHub repositories, showcasing my expertise in modern web development. Explore live projects hosted on Vercel and Netlify, featuring cutting-edge technologies. Stay updated with my latest work, innovations, and open-source contributions. Let’s build something amazing togethe"
 

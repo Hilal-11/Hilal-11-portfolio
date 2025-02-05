@@ -44,7 +44,7 @@ export default function App() {
         <Navigation />
         
       </div>
-      <div className='relative w-full lg:max-w-[80%] lg:mx-auto'>
+      <div className='relative w-full lg:max-w-[80%] lg:mx-auto'> <br /> <br />
 
           {/* {
             test ? (<LuMoonStar onClick={ handleTheme } className='text-4xl rounded-md px-2 py-2 text-blue-100 shadow-inner bg-slate-900 shadow-slate-800 hover:bg-blue-600 hover:shadow-2xl text-center  absolute  -top-[3.8rem] right-36'/>) : (<RiSunLine onClick={ handleTheme } className='text-4xl rounded-md px-2 py-2 text-blue-100  shadow-inner bg-slate-900 shadow-slate-800 hover:bg-blue-600 hover:shadow-2xl text-center absolute  -top-[3.8rem] right-36 '/>)
@@ -61,8 +61,6 @@ export default function App() {
         </div>
       </div>
     <Footer />
-          
-      
     </div>
   )
 }

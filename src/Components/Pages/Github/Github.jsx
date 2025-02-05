@@ -101,14 +101,18 @@ const Github = () => {
                   ) : (
                     filteredRepo != null && filteredRepo.map((repo , index) => (
                         <div key={repo.id} className="relative w-full h-auto bg-slate-900 shadow-2xl rounded-xl -my-6 px-2 py-2">
-                            <p className="font-bold text-lg break-words">{repo.name}</p>
+                            <p className="poppins-bolder text-lg break-words">{repo.name}</p>
                             <div className="py-2 ">
                                 <img className="rounded-xl h-[180] lg:h-[220px] w-full" src={images[index]} alt="C++" />
                             </div>
-                            <div className="py-2 w-full rounded-xl flex justify-between px-6">
-                                <button className="inline-block font-bold  bg-gradient-to-r-yellow-orange-red text-transparent bg-clip-text "><Link to={repo.clone_url}>Clone Repository</Link></button>
-                                <button className="inline-block font-bold  bg-gradient-to-r from-sky-500 to-indigo-500 text-transparent bg-clip-text "><Link to={githubURL}>Visit Github</Link></button>
+                            <div className="py-3 w-full rounded-xl flex justify-between px-1">
+                                <button className="bg-slate-700 shadow-xl shadow-slate-950 hover:bg-gradient-to-r from-sky-500 to-indigo-500 lg:px-4 px-2 py-1 rounded-md inline-block poppins-bold lg:text-lg text-sm"><Link to={repo.clone_url}>Clone Repeo</Link></button>
+                                <button className="bg-slate-700 shadow-xl shadow-slate-950 hover:bg-gradient-to-r from-sky-500 to-indigo-500 lg:px-4 px-2 py-1 rounded-md inline-block poppins-bold lg:text-lg text-sm"><Link to={githubURL}>Visit Github</Link></button>
                             </div>
+
+                            {/* 
+                            bg-gradient-to-r-yellow-orange-red text-transparent bg-clip-text
+                            bg-gradient-to-r from-sky-500 to-indigo-500 text-transparent bg-clip-text */}
                         </div>
                     ))
                   )

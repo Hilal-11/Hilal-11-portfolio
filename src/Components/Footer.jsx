@@ -7,17 +7,19 @@ import hilal3 from '../assets/hilal3.png'
 import { LuSun } from "react-icons/lu";
 import { LuMoon } from "react-icons/lu";
 import { FaWhatsappSquare } from "react-icons/fa";
+import { footerData } from './Config'
+import { footerInfo } from './Config'
 import '../../src/App.css'
 export const Footer = () => {
   return (
     <div className='w-full h-auto bg-inherit mb-4 bg-slate-950 py-14 ring-1 '>
         <div>
-            <div className='flex flex-wrap justify-center gap-5 '>
-                <button className="rounded-md px-4 py-4 text-blue-100 text-lg shadow-inner bg-slate-900 shadow-slate-800 hover:scale-[1.1] hover:bg-gradient-to-r hover:from-slate-900 hover:to-slate-700 hover:duration-700 hover:shadow-2xl hover:shadow-blue-400 hover:ring-1"><FaGithub/></button>
-                <button className="rounded-md px-4 py-4 text-blue-100 text-lg shadow-inner bg-slate-900 shadow-slate-800 hover:scale-[1.1] hover:bg-gradient-to-r hover:from-slate-900 hover:to-slate-700 hover:duration-700 hover:shadow-2xl hover:shadow-blue-400 hover:ring-1"><ImLinkedin /></button>
-                <button className="rounded-md px-4 py-4 text-blue-100 text-lg shadow-inner bg-slate-900 shadow-slate-800 hover:scale-[1.1] hover:bg-gradient-to-r hover:from-slate-900 hover:to-slate-700 hover:duration-700 hover:shadow-2xl hover:shadow-blue-400 hover:ring-1"><FaWhatsappSquare /></button>
-                <button className="rounded-md px-4 py-4 text-blue-100 text-lg shadow-inner bg-slate-900 shadow-slate-800 hover:scale-[1.1] hover:bg-gradient-to-r hover:from-slate-900 hover:to-slate-700 hover:duration-700 hover:shadow-2xl hover:shadow-blue-400 hover:ring-1"><SiLeetcode /></button>
-                <button className="rounded-md px-4 py-4 text-blue-100 text-lg shadow-inner bg-slate-900 shadow-slate-800 hover:scale-[1.1] hover:bg-gradient-to-r hover:from-slate-900 hover:to-slate-700 hover:duration-700 hover:shadow-2xl hover:shadow-blue-400 hover:ring-1"><FaSquareXTwitter /></button>
+            <div className='flex flex-wrap justify-center gap-10 '>
+                <button className="text-slate-700 text-4xl hover:text-white duration-300"><FaGithub/></button>
+                <button className="text-slate-700 text-4xl hover:text-white duration-300"><ImLinkedin /></button>
+                <button className="text-slate-700 text-4xl hover:text-white duration-300"><FaWhatsappSquare /></button>
+                <button className="text-slate-700 text-4xl hover:text-white duration-300"><SiLeetcode /></button>
+                <button className="text-slate-700 text-4xl hover:text-white duration-300"><FaSquareXTwitter /></button>
             </div>
         </div>
       <div className='flex flex-wrap lg:flex-nowrap gap-4  px-2 lg:px-10 py-5 lg:py-10 relative'>
@@ -32,8 +34,8 @@ export const Footer = () => {
               <img className='w-[60px] rounded-full' src={hilal3} alt="" />
             </div>
           </div>
-          <div className='px-4 lg:px-10 py-6 text-justify break-words '>
-            <p className='poppins-bold bg-gradient-to-r from-sky-500 to-indigo-500 text-transparent bg-clip-text lg:px-4 '>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, obcaecati harum. Accusamus eaque provident quidem quaerat pariatur inventore sit, atque, laboriosam assumenda saepe, quas eum enim quo! In nulla possimus, eaque enim expedita.</p>
+          <div className='px-4 lg:px-10 py-6 break-words '>
+            <p className='poppins-bold bg-gradient-to-r from-sky-500 to-indigo-500 text-transparent bg-clip-text lg:px-4 text-sm '>{footerInfo}</p>
           </div>
           <div className='flex justify-around items-center w-[170px] h-[40px] rounded-full ring-2 mx-4 lg:mx-10 my-4 lg:my-10 z-50'>
                 <span className='z-50 bg-slate-950 py-2 px-2 rounded-full hover:bg-slate-800 hover:py-2 hover:px-2 hover:rounded-full'><LuSun className='cursor-pointer text-xl'/></span>
@@ -45,22 +47,24 @@ export const Footer = () => {
           <div className='rounded-md px-5 '>
             <h1 className='poppins-bolder text-xl lg:text-2xl bg-gradient-to-r from-sky-500 to-indigo-500 text-transparent bg-clip-text lg:px-4'>Projects</h1>
             <div className='py-6 lg:px-6'>
-              <ul className=' space-y-2 lg:space-y-6 poppins-bold'>
-                <li>Crypto Trading</li>
-                <li>Gaming App</li>
-                <li>Components</li>
-                <li>Frammer Motion</li>
-              </ul>
+                  <ul className='space-y-2 lg:space-y-6 poppins-bold'>
+                    {
+                      footerData[0].projects.map((item , index) => (
+                        <li className='text-sm lg:text-sm cursor-pointer text-red-50 hover:underline hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:text-transparent hover:bg-clip-text duration-500' key={index}>{item}</li>
+                      ))
+                    }
+                  </ul>
             </div>
           </div>
           <div className='rounded-md px-5 '>
             <h1 className='poppins-bolder text-xl lg:text-2xl  bg-gradient-to-r from-sky-500 to-indigo-500 text-transparent bg-clip-text lg:px-4'>Courses</h1>
             <div className='py-6 lg:px-6'>
               <ul className=' space-y-2 lg:space-y-6 poppins-bold'>
-                <li>Crypto Trading</li>
-                <li>Gaming App</li>
-                <li>Components</li>
-                <li>Frammer Motion</li>
+                    {
+                      footerData[1].courses.map((item , index) => (
+                        <li className='text-sm lg:text-sm cursor-pointer text-red-50 hover:underline hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:text-transparent hover:bg-clip-text duration-500' key={index}>{item}</li>
+                      ))
+                    }
               </ul>
             </div>
           </div>
@@ -68,10 +72,11 @@ export const Footer = () => {
             <h1 className=' poppins-bolder text-xl lg:text-2xl bg-gradient-to-r from-sky-500 to-indigo-500 text-transparent bg-clip-text lg:px-4'>Github</h1>
             <div className='py-6 lg:px-6'>
               <ul className=' space-y-2 lg:space-y-6 poppins-bold'>
-                <li>Crypto Trading</li>
-                <li>Gaming App</li>
-                <li>Components</li>
-                <li>Frammer Motion</li>
+                    {
+                      footerData[2].github.map((item , index) => (
+                        <li className='text-sm lg:text-sm cursor-pointer text-red-50 hover:underline hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:text-transparent hover:bg-clip-text duration-500' key={index}>{item}</li>
+                      ))
+                    }
               </ul>
             </div>
           </div>
