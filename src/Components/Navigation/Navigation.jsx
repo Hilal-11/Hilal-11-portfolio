@@ -3,9 +3,10 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
 import {NavLink , Link, useNavigate} from 'react-router-dom'
 import { FaGithub } from "react-icons/fa";
-import { LuSun } from "react-icons/lu";
 import { LuMoon } from "react-icons/lu";
+import { SiGmail } from "react-icons/si";
 import {navLinksScreen} from '../Config'
+import { ToastContainer, toast } from 'react-toastify';
 function Navigation() {
     const navigate = useNavigate('')
     const[light , setLight] = useState(false);
@@ -17,7 +18,6 @@ function Navigation() {
     function handleIsMenuBar () {
         setIsMenuBar(!isMenuBar);
     }
-
   return (
     <div>
         <nav className=' border-b border-slate-700 z-50 flex justify-between px-4 items-center lg:py-4 py-3 bg-[#010B13] text-white fixed left-0 right-0 top-0 '>
@@ -27,11 +27,10 @@ function Navigation() {
                     </div>
                     <div className='hidden lg:flex gap-2'>
                         <button className=" rounded-md px-2 py-2 text-blue-100 text-lg text-center shadow-inner bg-slate-900 shadow-slate-800"><Link target='_blank' to={"https://github.com/Hilal-11"}><FaGithub /></Link></button>
-                        <button onClick={() => { setLight(!light) }} className=" rounded-md px-2 py-2 text-blue-100 text-lg shadow-inner bg-slate-900 shadow-slate-800 text-center">
-                            {
-                                (light === false) ? (<LuSun />) : ( < LuMoon />)
-                            }
-                        </button>
+                        <a href="mailto:hilalahmadcode123@gmail.com" target='_blank'><button className=" rounded-md px-2 py-2 text-blue-100 text-xl text-center shadow-inner bg-slate-900 "><SiGmail/></button></a>
+                        <button onClick={() => toast("Sorry theme feature is not avaliable yet 🙇‍♀️", {
+                            draggable: true,
+                        })} className=" rounded-md px-2 py-2 text-blue-100 text-lg shadow-inner bg-slate-900 shadow-slate-800 text-center"><LuMoon/></button>
                         <GiHamburgerMenu className='text-4xl rounded-md px-2 py-2 text-blue-100 shadow-inner bg-slate-900 shadow-slate-800 hover:bg-blue-600 hover:shadow-2xl text-center' onClick={ handleIsMenuBar }/>
                     </div>
                     {/* Big screens menu bar secession */}
@@ -66,15 +65,16 @@ function Navigation() {
                                         </div>
                                     </div>
                             </section>  }
-                    <div className='flex gap-2 lg:hidden'>
+                    <div className='flex gap-1 lg:hidden'>
                         <button className=" rounded-md px-2 py-2 text-blue-100 text-lg text-center shadow-inner bg-slate-900 "><FaGithub /></button>
-                        <button onClick={() => { setLight(!light) }} className=" rounded-md px-2 py-2 text-blue-100 text-lg shadow-inner bg-slate-900 text-center">
-                            {
-                                (light === false) ? (<LuSun />) : ( < LuMoon/>)
-                            }
-                        </button>
+                        <a href="mailto:hilalahmadcode123@gmail.com" target='_blank'><button className=" rounded-md px-2 py-2 text-blue-100 text-xl text-center shadow-inner bg-slate-900 "><SiGmail/></button></a>
+                        <button onClick={() => { toast("Sorry theme feature is not avaliable yet 🙇‍♀️" , {
+                            draggable: true,
+                        })  }} className=" rounded-md px-2 py-2 text-blue-100 text-lg shadow-inner bg-slate-900 text-center"><LuMoon/></button>
+                        
                         <GiHamburgerMenu className='text-4xl rounded-md px-2 py-2 text-blue-100 shadow-inner bg-slate-900 shadow-slate-800  text-center ' onClick={ menuBarHandler } />
-                    </div>   
+                    </div>  
+            <ToastContainer /> 
         </nav>
     </div>
   )
@@ -82,5 +82,4 @@ function Navigation() {
 export default Navigation
 
 
-//  shadow-inner bg-slate-900 shadow-slate-800
-// shadow-inner bg-slate-900 shadow-slate-800
+

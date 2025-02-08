@@ -8,8 +8,8 @@ import hilal3 from '../assets/hilal3.png'
 import { LuSun } from "react-icons/lu";
 import { HiMiniComputerDesktop } from "react-icons/hi2";
 import { LuMoon } from "react-icons/lu";
-import { FaWhatsappSquare } from "react-icons/fa";
-import { footerData } from './Config'
+import { SiGmail } from "react-icons/si";
+import { footerDataNext } from './Config'
 import { footerInfo } from './Config'
 import '../../src/App.css'
 export const Footer = () => {
@@ -19,7 +19,7 @@ export const Footer = () => {
             <div className='flex flex-wrap justify-center gap-10 '>
                 <button className="text-slate-700 text-4xl hover:text-white duration-300"><Link target='_blank' to="https://github.com/Hilal-11"><FaGithub/></Link></button>
                 <button className="text-slate-700 text-4xl hover:text-white duration-300"><Link target='_blank' to="https://www.linkedin.com/in/hilal-ahmad-ab5466347/"><ImLinkedin /></Link></button>
-                <button className="text-slate-700 text-4xl hover:text-white duration-300"><Link target='_blank' to="https://github.com/Hilal-11"><FaWhatsappSquare /></Link></button>
+                <button className="text-slate-700 text-4xl hover:text-white duration-300"><a target='_blank' href="mailto:hilalahmadcodedev123@gmail.com"><SiGmail /></a></button>
                 <button className="text-slate-700 text-4xl hover:text-white duration-300"><Link target='_blank' to="https://leetcode.com/Hilal-11"><SiLeetcode /></Link></button>
                 <button className="text-slate-700 text-4xl hover:text-white duration-300"><Link target='_blank' to="https://x.com/Hilal3884871845"><FaSquareXTwitter /></Link></button>
             </div>
@@ -51,8 +51,8 @@ export const Footer = () => {
             <div className='py-6 lg:px-6'>
                   <ul className='space-y-2 lg:space-y-6 poppins-bold'>
                     {
-                      footerData[0].projects.map((item , index) => (
-                        <li className='text-sm lg:text-sm cursor-pointer text-red-50 hover:underline hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:text-transparent hover:bg-clip-text duration-500' key={index}>{item}</li>
+                      footerDataNext[0].projects.map((item , index) => (
+                        <li className='text-sm lg:text-sm cursor-pointer text-red-50 hover:underline hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:text-transparent hover:bg-clip-text duration-500' key={index}><Link target='_blank' to={item.link}>{item.projectItem}</Link></li>
                       ))
                     }
                   </ul>
@@ -63,8 +63,8 @@ export const Footer = () => {
             <div className='py-6 lg:px-6'>
               <ul className=' space-y-2 lg:space-y-6 poppins-bold'>
                     {
-                      footerData[1].courses.map((item , index) => (
-                        <li className='text-sm lg:text-sm cursor-pointer text-red-50 hover:underline hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:text-transparent hover:bg-clip-text duration-500' key={index}>{item}</li>
+                      footerDataNext[1].courses.map((item , index) => (
+                        <li className='text-sm lg:text-sm cursor-pointer text-red-50 hover:underline hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:text-transparent hover:bg-clip-text duration-500' key={index}><Link target='_blank' to={item.link}>{item.courseItem}</Link></li>
                       ))
                     }
               </ul>
@@ -75,8 +75,8 @@ export const Footer = () => {
             <div className='py-6 lg:px-6'>
               <ul className=' space-y-2 lg:space-y-6 poppins-bold'>
                     {
-                      footerData[2].github.map((item , index) => (
-                        <li className='text-sm lg:text-sm cursor-pointer text-red-50 hover:underline hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:text-transparent hover:bg-clip-text duration-500' key={index}>{item}</li>
+                      footerDataNext[2].github.map((item , index) => (
+                        <li className='text-sm lg:text-sm cursor-pointer text-red-50 hover:underline hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 hover:text-transparent hover:bg-clip-text duration-500' key={index}><Link target="_blank" to={item.link}>{item.githubItem}</Link></li>
                       ))
                     }
               </ul>

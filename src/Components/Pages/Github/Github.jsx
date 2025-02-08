@@ -39,7 +39,6 @@ const Github = () => {
         setRepository(data)
         setFilteredRepo(data)
         setShimmer(false)
-
        }catch(err)  {
         console.log(err);
        }
@@ -109,10 +108,6 @@ const Github = () => {
                                 <button className="bg-slate-700 shadow-xl shadow-slate-950 hover:bg-gradient-to-r from-sky-500 to-indigo-500 lg:px-4 px-2 py-1 rounded-md inline-block poppins-bold lg:text-lg text-sm"><Link to={repo.clone_url}>Clone Repeo</Link></button>
                                 <button className="bg-slate-700 shadow-xl shadow-slate-950 hover:bg-gradient-to-r from-sky-500 to-indigo-500 lg:px-4 px-2 py-1 rounded-md inline-block poppins-bold lg:text-lg text-sm"><Link to={githubURL}>Visit Github</Link></button>
                             </div>
-
-                            {/* 
-                            bg-gradient-to-r-yellow-orange-red text-transparent bg-clip-text
-                            bg-gradient-to-r from-sky-500 to-indigo-500 text-transparent bg-clip-text */}
                         </div>
                     ))
                   )

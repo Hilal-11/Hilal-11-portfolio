@@ -490,21 +490,40 @@ export const youtubeVideos =  [
     { id: 12, thumbnail: 'https://i.ytimg.com/vi/e2nkq3h1P68/hqdefault.jpg', description: 'Learn how to write accessible HTML by solving codi…llenges. Click here to get to the challenges: ...' },
     { id: 13, thumbnail: 'https://i.ytimg.com/vi/a_iQb1lnAEQ/hqdefault.jpg', description: 'Learn HTML and CSS from scratch by building 6 proj…oding challenges. Go here for the interactive ...' },
 ]
-export const footerData = [
+export const footerDataNext = [
     {
         id: 1,
-        projects : ["Crypto Tracker" , "Explore Gradients" , "Epic Games Portal" , "Notes Application" , "Unreac Engine Assets" , "Youtube Clone"]
+        projects : [
+            {id : 111 , projectItem : "Crypto Tracker" , link: "http://www.github.com/Hilal-11/Crypto-Trading"},
+            {id : 112 , projectItem : "Explore Gradients" , link: "http://www.github.com/Hilal-11/"},
+            {id : 113 , projectItem : "Epic Games Portal" , link: "http://www.github.com/Hilal-11/React-Essentials "},
+            {id : 114 , projectItem : "Unreac Engine Assets" , link: "http://www.github.com/Hilal-11/React-Essentials "},
+            {id : 115 , projectItem : "Youtube Clone" , link: "http://www.github.com/Hilal-11"},
+        ]
     },
     {
         id: 1,
-        courses: ["Frontend Developmnt" , "Backend Development" , "Javascript" , "React Ecosystem" , "Threejs" , "React Three Fiber"]
+        courses: [
+            {id: 90 , courseItem : "Frontend Developmnt" , link : "https://www.youtube.com/watch?v=9He4UBLyk8Y&list=PLWKjhJtqVAbmMuZ3saqRIBimAKIMYkt0E"},
+            {id: 90 , courseItem : "Backend Development" , link : "https://www.youtube.com/watch?v=OFbSqd54Wwk&list=PLbtI3_MArDOkXRLxdMt1NOMtCS-84ibHH"},
+            {id: 90 , courseItem : "Javascript" , link : "https://www.youtube.com/watch?v=Hr5iLG7sUa0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37"},
+            {id: 90 , courseItem : "React Ecosystem" , link : "https://www.youtube.com/watch?v=M9O5AjEFzKw&t=176837s"},
+            {id: 90 , courseItem : "Threejs" , link : "https://www.youtube.com/watch?v=xJAfLdUgdc4&list=PLjcjAqAnHd1EIxV4FSZIiJZvsdrBc1Xho"},
+            {id: 90 , courseItem : "React Three Fiber", link : "https://www.youtube.com/watch?v=pXpckHDDNYo&list=PLpepLKamtPjiUF6PvVUbIFhx9HaS0qJs_"},
+        ]
     },
     {
         id: 1,
-        github: ["Web Fundamentals" ,"Javascript/Typescript" , "React Essentials" , "Data Structures Algorithms" , "C/C++/Java/Php/Python" ,
-             "Backend Development" , "Frammer Motion", "React Three Fiber" , "Three-Js"]
+        github: [
+            {id: 121 , githubItem : "Web Fundamentals",  link : "http://www.github.com/Hilal-11/JavascriptRendomPractice" ,},
+            {id: 122 , githubItem : "Javascript/Typescript",  link : "http://www.github.com/Hilal-11/JavascriptPractice" ,},
+            {id: 123 , githubItem : "Data Structures Algorithms",  link : "http://www.github.com/Hilal-11/DSA-Basic-To-Advance" ,},
+            {id: 126 , githubItem : "C/C++/Java/Php/Python",  link : "http://www.github.com/Hilal-11/C_Programming_Language" ,},
+            {id: 128 , githubItem : "Frammer Motion",  link : "http://www.github.com/Hilal-11" ,},
+            {id: 120 , githubItem : "React Three Fiber",  link : "http://www.github.com/Hilal-11" ,},
+            {id: 117 , githubItem : "Three Js",  link : "http://www.github.com/Hilal-11" ,},
+        ]
     }
-    
 ]
 export const footerInfo = "Discover my latest projects, courses, and GitHub repositories, showcasing my expertise in modern web development. Explore live projects hosted on Vercel and Netlify, featuring cutting-edge technologies. Stay updated with my latest work, innovations, and open-source contributions. Let’s build something amazing togethe."
 
