@@ -9,6 +9,7 @@ import { FaWhatsappSquare } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import ConnectForm from "./ConnectForm";
 import { FcCallback } from "react-icons/fc"
+import { Link } from "react-router-dom";
 const About = () => {
 
     return (
@@ -40,11 +41,10 @@ const About = () => {
                     <p className="poppins-bolder bg-gradient-to-r from-sky-500 to-indigo-500 text-transparent bg-clip-text">{aboutMe.para3}</p> <br />
                     <span className="text-xs px-2 py-2 rounded-lg inline bg-slate-950">Follow me on Social Media Platform </span>
                     <div className='my-4 flex flex-wrap justify-center lg:gap-10 gap-2'>
-                        <button className="rounded-full px-2 py-2 text-blue-100 text-lg shadow-inner bg-slate-950 hover:scale-[1.1] hover:bg-gradient-to-r hover:from-slate-900 hover:to-slate-700 hover:duration-700 hover:shadow-2xl hover:shadow-blue-400"><FaGithub/></button>
-                        <button className="rounded-full px-2 py-2 text-blue-100 text-lg shadow-inner bg-slate-950 hover:scale-[1.1] hover:bg-gradient-to-r hover:from-slate-900 hover:to-slate-700 hover:duration-700 hover:shadow-2xl hover:shadow-blue-400"><ImLinkedin /></button>
-                        <button className="rounded-full px-2 py-2 text-blue-100 text-lg shadow-inner bg-slate-950 hover:scale-[1.1] hover:bg-gradient-to-r hover:from-slate-900 hover:to-slate-700 hover:duration-700 hover:shadow-2xl hover:shadow-blue-400"><FaWhatsappSquare /></button>
-                        <button className="rounded-full px-2 py-2 text-blue-100 text-lg shadow-inner bg-slate-950 hover:scale-[1.1] hover:bg-gradient-to-r hover:from-slate-900 hover:to-slate-700 hover:duration-700 hover:shadow-2xl hover:shadow-blue-400"><SiLeetcode /></button>
-                        <button className="rounded-full px-2 py-2 text-blue-100 text-lg shadow-inner bg-slate-950 hover:scale-[1.1] hover:bg-gradient-to-r hover:from-slate-900 hover:to-slate-700 hover:duration-700 hover:shadow-2xl hover:shadow-blue-400"><FaSquareXTwitter /></button>
+                        <Link target="_blank" to={"https://github.com/Hilal-11"}><button className="rounded-full px-2 py-2 text-blue-100 text-lg shadow-inner bg-slate-950 hover:scale-[1.1] hover:bg-gradient-to-r hover:from-slate-900 hover:to-slate-700 hover:duration-700 hover:shadow-2xl hover:shadow-blue-400"><FaGithub/></button></Link>
+                        <Link target="_blank" to={"https://www.linkedin.com/in/hilal-ahmad-ab5466347/"}><button className="rounded-full px-2 py-2 text-blue-100 text-lg shadow-inner bg-slate-950 hover:scale-[1.1] hover:bg-gradient-to-r hover:from-slate-900 hover:to-slate-700 hover:duration-700 hover:shadow-2xl hover:shadow-blue-400"><ImLinkedin /></button></Link>
+                        <Link target="_blank" to={"https://leetcode.com/Hilal-11"}><button className="rounded-full px-2 py-2 text-blue-100 text-lg shadow-inner bg-slate-950 hover:scale-[1.1] hover:bg-gradient-to-r hover:from-slate-900 hover:to-slate-700 hover:duration-700 hover:shadow-2xl hover:shadow-blue-400"><SiLeetcode /></button></Link>
+                        <Link target="_blank" to={"https://x.com/Hilal3884871845"}><button className="rounded-full px-2 py-2 text-blue-100 text-lg shadow-inner bg-slate-950 hover:scale-[1.1] hover:bg-gradient-to-r hover:from-slate-900 hover:to-slate-700 hover:duration-700 hover:shadow-2xl hover:shadow-blue-400"><FaSquareXTwitter /></button></Link>
                     </div>
 
                 </div>

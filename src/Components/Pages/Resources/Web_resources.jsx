@@ -1,22 +1,28 @@
 import React, { useState } from "react";
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import {resoursesCoursesLists} from '../../Config'
 import { BsSearchHeart } from "react-icons/bs";
 import { toast, ToastContainer } from 'react-toastify';
-import {youtubeVideos} from '../../Config'
+import {newYoutubedata} from '../../Config'
 import './Style.css'
 import jsIcon from '../../../assets/ReposImages/javascriptIcon.png';
 import tsIcon from '../../../assets/ReposImages/typescript.png';
 import reactIcon from '../../../assets/ReposImages/react.png';
 import nodeIcon from '../../../assets/ReposImages/nodejs.png';
 const Web_resources = () => {
+
+    function findUserQuaryVideo(quary , data) {
+        return data.filter((data) => data?.title?.toLowerCase()?.includes(quary?.toLowerCase()))
+    }
     const [userInput , setUserInput] = useState('');
+    const [filteredYoutubeData , setFilterdYoutubeData] = useState(newYoutubedata)
     function searchCourcesHandler(event) {
         setUserInput(event.target.value)
     }
     function searchHandler () {
         if(userInput !== '') {
-            console.log("Searhing is done")
+            const recevedDataFromSrch = findUserQuaryVideo(userInput , newYoutubedata);
+            setFilterdYoutubeData(recevedDataFromSrch);
             setUserInput('')
         }else {
              toast.error('Please enter a search query' , {
@@ -25,6 +31,7 @@ const Web_resources = () => {
             })
         }
     }
+    
     return (
         <div className="w-full h-auto px-4">
             <div className="relative w-full lg:h-[500px] h-[300px] bg-slate-800 shadow-2xl rounded-xl flex justify-center">
@@ -66,17 +73,17 @@ const Web_resources = () => {
             <div className="grid lg:grid-cols-3 grid-cols-1 gap-20 ">
 
                {
-                youtubeVideos.map((video) => (
-                    <div key={video.id} className="relative w-full h-auto bg-slate-900 shadow-2xl rounded-xl -my-6 px-2 py-2">
+                filteredYoutubeData.map((item , index) => (
+                    <Link target="_blank" to={`https://www.youtube.com/watch?v=${item.id.videoId}`}><div key={index} className="relative w-full h-auto bg-slate-900 shadow-2xl rounded-xl -my-6 px-2 py-2">
                         <div>
-                            <img className="w-full rounded-xl" src={video.thumbnail} alt="error" />
+                            <img className="w-full rounded-xl" src={item.thumbnails.medium.url} alt="error" />
                         </div>
                     
                         <div className=" w-full rounded-xl flex justify-between px-0 lg:px-10 my-2">
                             <button className="px-10 py-2 rounded-md inline-block font-bold  bg-gradient-to-r from-sky-500 to-indigo-500  text-transparent bg-clip-text ">Frontend</button>
                             <button className="px-10 py-2 rounded-md inline-block font-bold  bg-gradient-to-r from-sky-500 to-indigo-500 text-transparent bg-clip-text ">Watch Now</button>
                         </div>
-                    </div>
+                    </div></Link>
                 ))
                }
             </div>

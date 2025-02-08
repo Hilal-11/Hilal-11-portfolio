@@ -31,9 +31,10 @@ import { FaGithub } from "react-icons/fa";
 import { MdHome } from "react-icons/md";
 import faizan from '../assets/faizan.jpg';
 import umer from '../assets/umer.jpg';
-import naveed from '../assets/hilalHimage.png';
-import asif from '../assets/umer.jpg';
-import sahil from '../assets/hilalHimage.png';
+import naveed from '../assets/Naveed.jpg';
+import asif from '../assets/Asif.png';
+import Sahil from '../assets/Sahil.jpg';
+import Manan from '../assets/Manan.jpg';
 
 export const skillsData = [ 
     {
@@ -431,41 +432,48 @@ export const reviews = [
         id: 2,
         name: "Umer Maqbool",
         profession: "Research and Market analyest",
-        response : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi earum placeat dolores nesciunt odit tenetur laboriosam corrupti dicta veniam? Natus accusantium optio consequatur autem qui, atque voluptatibus quia deserunt accusamus.",
+        response : "I have learned so much more than I expected! The explanations of programming languages, networking, operating systems, and even electronics were detailed and practical. The focus on real-world applications, coding challenges, and debugging techniques really helped me improve my problem-solving skills. Truly an outstanding experience.",
         image: umer
     },
     {
         id: 3,
         name: "Naveed Lone",
         profession: "Computer science Student",
-        response : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi earum placeat dolores nesciunt odit tenetur laboriosam corrupti dicta veniam? Natus accusantium optio consequatur autem qui, atque voluptatibus quia deserunt accusamus.",
+        response : "Learning from this mentor has been the best experience of my life! I started with no knowledge, and now I can confidently code in C, C++, Java, JavaScript, and React. The step-by-step approach, real-world projects, and in-depth explanations made learning so smooth. From fundamental programming concepts to intermediate-level problem-solving and debugging, I have gained a strong foundation. This mentorship has truly shaped my career, and I’m grateful for the guidance and support.",
         image: naveed
     },
     {
         id: 4,
         name: "Asif Khan",
         profession: "Computer science Student",
-        response : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi earum placeat dolores nesciunt odit tenetur laboriosam corrupti dicta veniam? Natus accusantium optio consequatur autem qui, atque voluptatibus quia deserunt accusamus.",
+        response : "Learning JavaScript and React with this mentor was a game-changer. The projects and hands-on practice were exactly what I needed to build my confidence.Excellent teaching style! I learned not just coding but also networking, operating systems, and even some electronics. The real-world examples really helped me understand better",
         image: asif
     },
     {
         id: 1,
         name: "Faizan Elahi",
         profession : "Frontend Developer",
-        response : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi earum placeat dolores nesciunt odit tenetur laboriosam corrupti dicta veniam? Natus accusantium optio consequatur autem qui, atque voluptatibus quia deserunt accusamus.",
+        response : "If you want to master frontend development or understand core computer science topics, this is the perfect place to learn. The guidance and support were outstanding.",
         image: faizan
         
     },
     {
         id: 5,
         name: "Sahil Saleem",
-        profession: "CS Student",
-        response : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sequi earum placeat dolores nesciunt odit tenetur laboriosam corrupti dicta veniam? Natus accusantium optio consequatur autem qui, atque voluptatibus quia deserunt accusamus.",
-        image: sahil
+        profession: "Computer science Student",
+        response : "As someone who struggled with coding before, I never thought I would understand concepts like pointers in C++, object-oriented programming in Java, or advanced React components. But the way everything was taught here made learning so simple! The mentor ensures that no one is left behind and encourages interactive learning, which made a huge difference for me.",
+        image: Sahil
+        
+    },
+    {
+        id: 6,
+        name: "Mir Manan",
+        profession: "Computer science Student",
+        response : "Excellent teaching style! I learned not just coding but also networking, operating systems, and even some electronics. The real-world examples really helped me understand better.",
+        image: Manan
         
     }
 ]
-
 export const youtubeVideos =  [
     { id: 0, thumbnail: 'https://i.ytimg.com/vi/nu_pCVPKzTk/hqdefault.jpg', description: 'Learn full-stack web development in this full cour…ll learn the basics of HTML, CSS, and JavaScript.' },
     { id: 1, thumbnail: 'https://i.ytimg.com/vi/vzGllw18DkA/hqdefault.jpg', description: 'This web programming course from Harvard Universit…off. It dives more deeply into the design and ...' },
@@ -482,8 +490,6 @@ export const youtubeVideos =  [
     { id: 12, thumbnail: 'https://i.ytimg.com/vi/e2nkq3h1P68/hqdefault.jpg', description: 'Learn how to write accessible HTML by solving codi…llenges. Click here to get to the challenges: ...' },
     { id: 13, thumbnail: 'https://i.ytimg.com/vi/a_iQb1lnAEQ/hqdefault.jpg', description: 'Learn HTML and CSS from scratch by building 6 proj…oding challenges. Go here for the interactive ...' },
 ]
-
-
 export const footerData = [
     {
         id: 1,
@@ -500,5 +506,457 @@ export const footerData = [
     }
     
 ]
-export const footerInfo = "Discover my latest projects, courses, and GitHub repositories, showcasing my expertise in modern web development. Explore live projects hosted on Vercel and Netlify, featuring cutting-edge technologies. Stay updated with my latest work, innovations, and open-source contributions. Let’s build something amazing togethe"
+export const footerInfo = "Discover my latest projects, courses, and GitHub repositories, showcasing my expertise in modern web development. Explore live projects hosted on Vercel and Netlify, featuring cutting-edge technologies. Stay updated with my latest work, innovations, and open-source contributions. Let’s build something amazing togethe."
+
+// Resources Data of youtube channels (courses thumbnils and links)
+export const newYoutubedata = [
+            {
+                kind : "youtube#searchResult",
+                etag: "nAtuKBdfvmYj9Yo8EDTETpzvvPY",
+                id: {
+                    kind : "youtube#video",
+                    videoId: "KHxX0CgMGs4"
+                },
+                title: "Javascript",
+
+                thumbnails: {
+                        default: {
+                            url: "https://i.ytimg.com/vi/KHxX0CgMGs4/default.jpg",
+
+                        },
+                        medium: {
+                            url: "https://i.ytimg.com/vi/KHxX0CgMGs4/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        high: {
+                            url: "https://i.ytimg.com/vi/KHxX0CgMGs4/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        }
+                    },
+                
+            },
+            {
+                kind : "youtube#searchResult",
+                etag: "kw20ELa7iLZVK-i6fgcZJzCXV6U",
+                id: {
+                    kind : "youtube#video",
+                    videoId: "eX-ODcr3XJg"
+                },
+                title: "Javascript",
+                    thumbnails: {
+                        default: {
+                            url: "https://i.ytimg.com/vi/eX-ODcr3XJg/default.jpg",
+
+                        },
+                        medium: {
+                            url: "https://i.ytimg.com/vi/eX-ODcr3XJg/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        high: {
+                            url: "https://i.ytimg.com/vi/eX-ODcr3XJg/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        }
+                    },
+      
+            },
+            {
+                kind : "youtube#searchResult",
+                etag: "KucI2yGp9O5Q6QSwNT9P4NEIpno",
+                id: {
+                    kind : "youtube#video",
+                    videoId: "OFpqvaJ3QYg"
+                },
+                title: "Javascript",
+                    thumbnails: {
+                        default: {
+                            url: "https://i.ytimg.com/vi/OFpqvaJ3QYg/default.jpg",
+
+                        },
+                        medium: {
+                            url: "https://i.ytimg.com/vi/OFpqvaJ3QYg/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        high: {
+                            url: "https://i.ytimg.com/vi/OFpqvaJ3QYg/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        }
+                    },
+   
+            },
+            {
+                
+                    kind : "youtube#searchResult",
+                    etag: "skg8abBJaB09j8LZz4l6j1FZ7rw",
+                    id: {
+                        kind : "youtube#video",
+                        videoId: "Zi-Q0t4gMC8"
+                    },
+                    title: "Javascript",
+                        thumbnails: {
+                            default: {
+                                url: "https://i.ytimg.com/vi/Zi-Q0t4gMC8/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            medium: {
+                                url: "https://i.ytimg.com/vi/Zi-Q0t4gMC8/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            high: {
+                                url: "https://i.ytimg.com/vi/Zi-Q0t4gMC8/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+
+            },
+            {
+                kind : "youtube#searchResult",
+                etag: "wNQayg7mIQlwXeAMjKsJn8G7N-Q",
+                id: {
+                    kind : "youtube#video",
+                    videoId: "sm5Y7Vtuihg"
+                },
+              
+                    thumbnails: {
+                        default: {
+                            url: "https://i.ytimg.com/vi/sm5Y7Vtuihg/default.jpg",
+
+                        },
+                        medium: {
+                            url: "https://i.ytimg.com/vi/sm5Y7Vtuihg/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        high: {
+                            url: "https://i.ytimg.com/vi/sm5Y7Vtuihg/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        }
+                    },
+
+            },
+            {
+                kind : "youtube#searchResult",
+                etag: "BagniOUmzz65qGk5IMEMvOdfNoI",
+                id: {
+                    kind : "youtube#video",
+                    videoId: "x4rFhThSX04"
+                },
+              
+                    thumbnails: {
+                        default: {
+                            url: "https://i.ytimg.com/vi/x4rFhThSX04/default.jpg",
+
+                        },
+                        medium: {
+                            url: "https://i.ytimg.com/vi/x4rFhThSX04/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        high: {
+                            url: "https://i.ytimg.com/vi/x4rFhThSX04/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        }
+                    },
+
+            },
+            {
+                kind : "youtube#searchResult",
+                etag: "AUWdSHhTNHohcGpQ8z8-tBDZtkI",
+                id: {
+                    kind : "youtube#video",
+                    videoId: "2esQdKzRUCw"
+                },
+               
+                    thumbnails: {
+                        default: {
+                            url: "https://i.ytimg.com/vi/2esQdKzRUCw/default.jpg",
+
+                        },
+                        medium: {
+                            url: "https://i.ytimg.com/vi/2esQdKzRUCw/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        high: {
+                            url: "https://i.ytimg.com/vi/2esQdKzRUCw/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        }
+                    },
+   
+            },
+            {
+                kind : "youtube#searchResult",
+                etag: "B97A1TBDEJ3MXT7zXGbKXnOyDZs",
+                id: {
+                    kind : "youtube#video",
+                    videoId: "pgw2KPfgK1E"
+                },
+                title: "Typescript",
+               
+                    thumbnails: {
+                        default: {
+                            url: "https://i.ytimg.com/vi/pgw2KPfgK1E/default.jpg",
+
+                        },
+                        medium: {
+                            url: "https://i.ytimg.com/vi/pgw2KPfgK1E/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        high: {
+                            url: "https://i.ytimg.com/vi/pgw2KPfgK1E/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        }
+                    },
+
+            },
+            {
+                kind : "youtube#searchResult",
+                etag: "1VseyB5zPqXWJ8fa04bi_EtiiLA",
+                id: {
+                    kind : "youtube#video",
+                    videoId: "fP-371MN0Ck"
+                },
+  
+                    thumbnails: {
+                        default: {
+                            url: "https://i.ytimg.com/vi/fP-371MN0Ck/default.jpg",
+
+                        },
+                        medium: {
+                            url: "https://i.ytimg.com/vi/fP-371MN0Ck/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        high: {
+                            url: "https://i.ytimg.com/vi/fP-371MN0Ck/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        }
+                    },
+
+            },
+            {
+                kind : "youtube#searchResult",
+                etag: "SVfH1mEuBrWMk3gmCJiBH3wBumE",
+                id: {
+                    kind : "youtube#video",
+                    videoId: "PWG7NlUDVaA"
+                },
+               
+                    thumbnails: {
+                        default: {
+                            url: "https://i.ytimg.com/vi/PWG7NlUDVaA/default.jpg",
+
+                        },
+                        medium: {
+                            url: "https://i.ytimg.com/vi/PWG7NlUDVaA/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        high: {
+                            url: "https://i.ytimg.com/vi/PWG7NlUDVaA/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        }
+                    },
+   
+            },
+            {
+                kind : "youtube#searchResult",
+                etag: "3PTVIz1Vs-VOvvQs97MF6Rv3CYc",
+                id: {
+                    kind : "youtube#video",
+                    videoId: "-kizZZrh1zM"
+                },
+                title: "React",
+            
+                    thumbnails: {
+                        default: {
+                            url: "https://i.ytimg.com/vi/-kizZZrh1zM/default.jpg",
+
+                        },
+                        medium: {
+                            url: "https://i.ytimg.com/vi/-kizZZrh1zM/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        high: {
+                            url: "https://i.ytimg.com/vi/-kizZZrh1zM/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        }
+                    },
+ 
+            },
+            {
+                kind : "youtube#searchResult",
+                etag: "TL841eoIH1HJyvDwaJCe9ykVC-4",
+                id: {
+                    kind : "youtube#video",
+                    videoId: "yBThHM2pBbE"
+                },
+              
+                    thumbnails: {
+                        default: {
+                            url: "https://i.ytimg.com/vi/yBThHM2pBbE/default.jpg",
+
+                        },
+                        medium: {
+                            url: "https://i.ytimg.com/vi/yBThHM2pBbE/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        high: {
+                            url: "https://i.ytimg.com/vi/yBThHM2pBbE/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        }
+                    },
+  
+            },
+            {
+                kind : "youtube#searchResult",
+                etag: "u0IwzAU9g2KJztGi82bEyIwj_xE",
+                id: {
+                    kind : "youtube#video",
+                    videoId: "SpwzRDUQ1GI"
+                },
+               
+                    thumbnails: {
+                        default: {
+                            url: "https://i.ytimg.com/vi/SpwzRDUQ1GI/default.jpg",
+
+                        },
+                        medium: {
+                            url: "https://i.ytimg.com/vi/SpwzRDUQ1GI/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        high: {
+                            url: "https://i.ytimg.com/vi/SpwzRDUQ1GI/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        }
+                    },
+  
+            },
+            {
+                kind : "youtube#searchResult",
+                etag: "JavObgZ8UEzGSLyf1ltY_jeFzRE",
+                id: {
+                    kind : "youtube#video",
+                    videoId: "aeHCUl8d-90"
+                },
+               
+                    thumbnails: {
+                        default: {
+                            url: "https://i.ytimg.com/vi/aeHCUl8d-90/default.jpg",
+
+                        },
+                        medium: {
+                            url: "https://i.ytimg.com/vi/aeHCUl8d-90/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        high: {
+                            url: "https://i.ytimg.com/vi/aeHCUl8d-90/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        }
+                    },
+
+            },
+            {
+                kind : "youtube#searchResult",
+                etag: "LTxklx00SIAQAH0crGF_UWPV5JY",
+                id: {
+                    kind : "youtube#video",
+                    videoId: "iS1K64X_eXg"
+                },
+              
+                    thumbnails: {
+                        default: {
+                            url: "https://i.ytimg.com/vi/iS1K64X_eXg/default.jpg",
+
+                        },
+                        medium: {
+                            url: "https://i.ytimg.com/vi/iS1K64X_eXg/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        high: {
+                            url: "https://i.ytimg.com/vi/iS1K64X_eXg/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        }
+                    },
+       
+            },
+            {
+                kind : "youtube#searchResult",
+                etag: "eApcgBUMRrSa-Ne5Z0knSwQmusA",
+                id: {
+                    kind : "youtube#video",
+                    videoId: "H3XIJYEPdus"
+                },
+              
+                    thumbnails: {
+                        default: {
+                            url: "https://i.ytimg.com/vi/H3XIJYEPdus/default.jpg",
+
+                        },
+                        medium: {
+                            url: "https://i.ytimg.com/vi/H3XIJYEPdus/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        high: {
+                            url: "https://i.ytimg.com/vi/H3XIJYEPdus/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        }
+                    },
+     
+            },
+            {
+                kind : "youtube#searchResult",
+                etag: "NU19d96hB5V3H7S0qSG-ARUNV9g",
+                id: {
+                    kind : "youtube#video",
+                    videoId: "J9xeFxkcX2w"
+                },
+              
+                    thumbnails: {
+                        default: {
+                            url: "https://i.ytimg.com/vi/J9xeFxkcX2w/default.jpg",
+
+                        },
+                        medium: {
+                            url: "https://i.ytimg.com/vi/J9xeFxkcX2w/mqdefault.jpg",
+                            "width": 320,
+                            "height": 180
+                        },
+                        high: {
+                            url: "https://i.ytimg.com/vi/J9xeFxkcX2w/hqdefault.jpg",
+                            "width": 480,
+                            "height": 360
+                        }
+                    },
+     
+            },
+]
+
 

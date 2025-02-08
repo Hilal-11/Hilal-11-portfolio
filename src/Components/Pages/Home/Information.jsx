@@ -16,7 +16,7 @@ function Information() {
                     <p className='px-1'>{review.response}</p>
                   </div>
                   <div className='flex items-center gap-2'>
-                    <img className='w-[45px] rounded-full' src={review.image} alt="" />
+                    <img className='w-[50px] h-[50px] rounded-full' src={review.image} alt="" />
                     <div className=' bouncing_animation text-xs bg-slate-800 px-3 py-2 rounded-md'>
                         <span className='block poppins-bolder text-center'>{review.name}</span>
                         <p className=' poppins-bold'>{review.profession}</p>

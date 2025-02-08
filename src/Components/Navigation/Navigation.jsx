@@ -2,12 +2,9 @@ import React, { useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
 import {NavLink , Link, useNavigate} from 'react-router-dom'
-import { clsx } from 'clsx';
 import { FaGithub } from "react-icons/fa";
-import { AiOutlineUserAdd } from "react-icons/ai";
 import { LuSun } from "react-icons/lu";
 import { LuMoon } from "react-icons/lu";
-import logoImage from '../../assets/react-icon-logo.png'
 import {navLinksScreen} from '../Config'
 function Navigation() {
     const navigate = useNavigate('')
@@ -29,7 +26,7 @@ function Navigation() {
                             <p onClick={() => { navigate('/') }} className='poppins-bolder lg:text-sm'><span className='bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 text-transparent bg-clip-text poppins-bolder text-2xl'>WEB</span>.mastery</p>
                     </div>
                     <div className='hidden lg:flex gap-2'>
-                        <button className=" rounded-md px-2 py-2 text-blue-100 text-lg text-center shadow-inner bg-slate-900 shadow-slate-800"><FaGithub /></button>
+                        <button className=" rounded-md px-2 py-2 text-blue-100 text-lg text-center shadow-inner bg-slate-900 shadow-slate-800"><Link target='_blank' to={"https://github.com/Hilal-11"}><FaGithub /></Link></button>
                         <button onClick={() => { setLight(!light) }} className=" rounded-md px-2 py-2 text-blue-100 text-lg shadow-inner bg-slate-900 shadow-slate-800 text-center">
                             {
                                 (light === false) ? (<LuSun />) : ( < LuMoon />)
@@ -70,8 +67,8 @@ function Navigation() {
                                     </div>
                             </section>  }
                     <div className='flex gap-2 lg:hidden'>
-                        <button className=" rounded-md px-2 py-2 text-blue-100 text-lg text-center shadow-inner bg-slate-900 shadow-slate-800 hover:shadow-custom"><FaGithub /></button>
-                        <button onClick={() => { setLight(!light) }} className=" rounded-md px-2 py-2 text-blue-100 text-lg shadow-inner bg-slate-900 shadow-slate-800 hover:shadow-custom text-center">
+                        <button className=" rounded-md px-2 py-2 text-blue-100 text-lg text-center shadow-inner bg-slate-900 "><FaGithub /></button>
+                        <button onClick={() => { setLight(!light) }} className=" rounded-md px-2 py-2 text-blue-100 text-lg shadow-inner bg-slate-900 text-center">
                             {
                                 (light === false) ? (<LuSun />) : ( < LuMoon/>)
                             }
