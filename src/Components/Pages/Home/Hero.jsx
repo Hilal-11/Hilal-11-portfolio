@@ -1,7 +1,7 @@
 import React from 'react'
 import './Hero.css'
 import { useNavigate } from 'react-router-dom'
-import hero_sec_video from '../../../assets/Video.mp4'
+import heroVideo from '../../../assets/Video.mp4'
 import DeveloperInfo from './DeveloperInfo'
 import { FaLevelDownAlt } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
@@ -38,7 +38,7 @@ function Home() {
               </div>
       </div>
       <div className=' lg:h-[600px] bouncing_animation flex '>
-          <video autoPlay loop className='z-50 hover:scale-[1.1] duration-700' src={hero_sec_video} ></video>
+          <video autoPlay loop className='z-50 hover:scale-[1.1] duration-700' src={heroVideo} ></video>
       </div>
     </div>
     <div className='z-50 my-10 w-full flex justify-around py-10 text-4xl font-extrabold lg:text-5xl xl:text-8xl text-slate-800'>

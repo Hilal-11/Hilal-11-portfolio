@@ -188,9 +188,9 @@ export const navLinksScreen = [
     },
     {
         id : 1,
-        label : "Resourses",
-        to : "Resourses",
-        icon : <GiGiftOfKnowledge/>
+        label : "Github",
+        to : "Github",
+        icon : <FaGithub/>
     },
     {
         id : 2,
@@ -199,13 +199,13 @@ export const navLinksScreen = [
         icon : <LiaConnectdevelop/>
     },
     {
-        id : 4,
-        label : "Github",
-        to : "Github",
-        icon : <FaGithub/>
+        id : 3,
+        label : "Resourses",
+        to : "Resourses",
+        icon : <GiGiftOfKnowledge/>
     },
     {
-        id : 3,
+        id : 4,
         label : "About",
         to : "About",
         icon : <IoPersonAdd/>
@@ -502,18 +502,18 @@ export const footerDataNext = [
         ]
     },
     {
-        id: 1,
+        id: 2,
         courses: [
-            {id: 90 , courseItem : "Frontend Developmnt" , link : "https://www.youtube.com/watch?v=9He4UBLyk8Y&list=PLWKjhJtqVAbmMuZ3saqRIBimAKIMYkt0E"},
-            {id: 90 , courseItem : "Backend Development" , link : "https://www.youtube.com/watch?v=OFbSqd54Wwk&list=PLbtI3_MArDOkXRLxdMt1NOMtCS-84ibHH"},
-            {id: 90 , courseItem : "Javascript" , link : "https://www.youtube.com/watch?v=Hr5iLG7sUa0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37"},
-            {id: 90 , courseItem : "React Ecosystem" , link : "https://www.youtube.com/watch?v=M9O5AjEFzKw&t=176837s"},
-            {id: 90 , courseItem : "Threejs" , link : "https://www.youtube.com/watch?v=xJAfLdUgdc4&list=PLjcjAqAnHd1EIxV4FSZIiJZvsdrBc1Xho"},
-            {id: 90 , courseItem : "React Three Fiber", link : "https://www.youtube.com/watch?v=pXpckHDDNYo&list=PLpepLKamtPjiUF6PvVUbIFhx9HaS0qJs_"},
+            {id: 901 , courseItem : "Frontend Developmnt" , link : "https://www.youtube.com/watch?v=9He4UBLyk8Y&list=PLWKjhJtqVAbmMuZ3saqRIBimAKIMYkt0E"},
+            {id: 902 , courseItem : "Backend Development" , link : "https://www.youtube.com/watch?v=OFbSqd54Wwk&list=PLbtI3_MArDOkXRLxdMt1NOMtCS-84ibHH"},
+            {id: 903 , courseItem : "Javascript" , link : "https://www.youtube.com/watch?v=Hr5iLG7sUa0&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37"},
+            {id: 904 , courseItem : "React Ecosystem" , link : "https://www.youtube.com/watch?v=M9O5AjEFzKw&t=176837s"},
+            {id: 905 , courseItem : "Threejs" , link : "https://www.youtube.com/watch?v=xJAfLdUgdc4&list=PLjcjAqAnHd1EIxV4FSZIiJZvsdrBc1Xho"},
+            {id: 906 , courseItem : "React Three Fiber", link : "https://www.youtube.com/watch?v=pXpckHDDNYo&list=PLpepLKamtPjiUF6PvVUbIFhx9HaS0qJs_"},
         ]
     },
     {
-        id: 1,
+        id: 3,
         github: [
             {id: 121 , githubItem : "Web Fundamentals",  link : "http://www.github.com/Hilal-11/JavascriptRendomPractice" ,},
             {id: 122 , githubItem : "Javascript/Typescript",  link : "http://www.github.com/Hilal-11/JavascriptPractice" ,},

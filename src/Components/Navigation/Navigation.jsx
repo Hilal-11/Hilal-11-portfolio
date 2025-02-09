@@ -39,7 +39,7 @@ function Navigation() {
                             <div className={'z-50 py-2 px-2 lg: w-[300px] h-auto rounded-lg bg-slate-800 absolute right-10 top-[5.3rem] shadow-xl shadow-slate-900'}>
                                 {
                                     navLinksScreen.map((link) => (
-                                        <NavLink to={link.to}><li onClick={ ()=> {setIsMenuBar(false)}} key={link.id} className='flex gap-2 font-sans font-bold text-xl list-none py-3 hover:bg-blue-500 hover:ring-1 hover:shadow-sm rounded-sm px-2 cursor-pointer'>
+                                        <NavLink key={link.id} to={link.to}><li onClick={ ()=> {setIsMenuBar(false)}}  className='flex gap-2 font-sans font-bold text-xl list-none py-3 hover:bg-blue-500 hover:ring-1 hover:shadow-sm rounded-sm px-2 cursor-pointer'>
                                             <span className=' text-3xl '>{link.icon}</span><span></span>{link.label}</li></NavLink>
                                     ))
                                 }
@@ -58,7 +58,7 @@ function Navigation() {
                                         <div className='py-2 px-0 text-black flex-col gap-40 '>
                                             {
                                                 navLinksScreen.map((link) => (
-                                                    <NavLink className="px-3" to={link.to}><li onClick={ ()=> {SetSideBar(false)}} key={link.id} className='text-white flex text-lg font-sans font-bold list-none gap-2 py-2 hover:bg-blue-600 hover:rounded-lg hover:shadow-sm rounded-sm px-0 '>
+                                                    <NavLink key={link.id}  className="px-3" to={link.to}><li onClick={ ()=> {SetSideBar(false)}} className='text-white flex text-lg font-sans font-bold list-none gap-2 py-2 hover:bg-blue-600 hover:rounded-lg hover:shadow-sm rounded-sm px-0 '>
                                                         <span className=' text-2xl'>{link.icon}</span>{link.label}</li></NavLink>
                                                 ))
                                             }

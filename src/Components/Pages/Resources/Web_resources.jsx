@@ -4,7 +4,6 @@ import {resoursesCoursesLists} from '../../Config'
 import { BsSearchHeart } from "react-icons/bs";
 import { toast, ToastContainer } from 'react-toastify';
 import {newYoutubedata} from '../../Config'
-import './Style.css'
 import jsIcon from '../../../assets/ReposImages/javascriptIcon.png';
 import tsIcon from '../../../assets/ReposImages/typescript.png';
 import reactIcon from '../../../assets/ReposImages/react.png';
@@ -74,7 +73,7 @@ const Web_resources = () => {
 
                {
                 filteredYoutubeData.map((item , index) => (
-                    <Link target="_blank" to={`https://www.youtube.com/watch?v=${item.id.videoId}`}><div key={index} className="relative w-full h-auto bg-slate-900 shadow-2xl rounded-xl -my-6 px-2 py-2">
+                    <Link key={item.id} target="_blank" to={`https://www.youtube.com/watch?v=${item.id.videoId}`}><div className="relative w-full h-auto bg-slate-900 shadow-2xl rounded-xl -my-6 px-2 py-2">
                         <div>
                             <img className="w-full rounded-xl" src={item.thumbnails.medium.url} alt="error" />
                         </div>
