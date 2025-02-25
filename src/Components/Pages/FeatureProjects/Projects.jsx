@@ -14,11 +14,8 @@ import { SiNetlify } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { IoIosLink } from "react-icons/io";
 const Projects = () => {
-
     const [projects , setProjects] = useState([]);
     const [isDeployMenuOpen , setIsDeployMenuOpen] = useState({})
-
-
     const API_TOKEN = 'BozxG299fqq0PVREUyyUk8S4'
     useEffect(() => {
         const fetchProjects = async () => {
@@ -38,9 +35,6 @@ const Projects = () => {
         };
         fetchProjects();
     }, []);
-
-
-
     const handleDeployedMenuBox = (index) => {
         setIsDeployMenuOpen((prev) => ({
             ...prev,
@@ -70,7 +64,7 @@ const Projects = () => {
                 <p>Explore my live projects, deployed seamlessly on <span className="poppins-bolder bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">Vercel</span> and <span className="poppins-bolder bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 text-transparent bg-clip-text">Netlify</span>, with open-source code available on <span className="poppins-bolder bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">GitHub</span>. Each project showcases modern technologies, responsive design, and real-world functionality.</p>
             </div>
 
-        <div className="my-0 flex gap-6 justify-evenly lg:flex-nowrap flex-wrap w-full ">
+        <div className="my-0 flex gap-6 justify-evenly  flex-wrap w-full ">
             {
                 projects.map((vercel , index) => (
                         <div className="w-full lg:w-[500px] h-auto rounded-lg bg-slate-900 shadow-2xl shadow-slate-950 ring-1 ring-slate-600 px-1 lg:px-6 py-4">
@@ -89,11 +83,11 @@ const Projects = () => {
                                     {
                                         isDeployMenuOpen[index] && (
                                             <div className="absolute right-8 top-4 w-[130px] h-auto rounded-md bg-slate-950 ring-1 ring-slate-700 px-2 py-2">
-                                                <div className=" list-none space-y-1 px-0">
-                                                    <a target="_blank" href="https://github.com/hilal-11"><li className="text-sm cursor-pointer hover:bg-slate-800 rounded-sm py-1 px-2 flex"><span><IoIosLink /></span>Github</li></a>
-                                                    <a target="_blank" href="https://vercel.com/hilal-11"><li className="text-sm cursor-pointer hover:bg-slate-800 rounded-sm py-1 px-2 flex"><span><IoIosLink /></span>Vercel</li></a>
-                                                    <a target="_blank" href="https://github.com/hilal-11"><li className="text-sm cursor-pointer hover:bg-slate-800 rounded-sm py-1 px-2 flex"><span><IoIosLink /></span>Netlify</li></a>
-                                                    <a target="_blank" href="https://leetcode.com/hilal-11"><li className="text-sm cursor-pointer hover:bg-slate-800 rounded-sm py-1 px-2 flex"><span><IoIosLink /></span>Leetcode</li></a>
+                                                <div className="list-none space-y-1 px-0">
+                                                    <a target="_blank" href="https://github.com/hilal-11"><li className="flex items-center gap-2 text-sm cursor-pointer hover:bg-slate-800 rounded-sm py-1 px-1"><span><IoIosLink /></span>Github</li></a>
+                                                    <a target="_blank" href="https://vercel.com/hilal-11"><li className="flex items-center gap-2 text-sm cursor-pointer hover:bg-slate-800 rounded-sm py-1 px-1"><span><IoIosLink /></span>Vercel</li></a>
+                                                    <a target="_blank" href="https://github.com/hilal-11"><li className="flex items-center gap-2 text-sm cursor-pointer hover:bg-slate-800 rounded-sm py-1 px-1"><span><IoIosLink /></span>Netlify</li></a>
+                                                    <a target="_blank" href="https://leetcode.com/hilal-11"><li className="flex items-center gap-2 text-sm cursor-pointer hover:bg-slate-800 rounded-sm py-1 px-1"><span><IoIosLink /></span>Leetcode</li></a>
                                                 </div>
                                             </div>
                                     )}

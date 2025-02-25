@@ -58,7 +58,7 @@ function Navigation() {
                                         <div className='py-2 px-0 text-black flex-col gap-40 '>
                                             {
                                                 navLinksScreen.map((link) => (
-                                                    <NavLink key={link.id}  className="px-3" to={link.to}><li onClick={ ()=> {SetSideBar(false)}} className='text-white flex text-lg font-sans font-bold list-none gap-2 py-2 hover:bg-blue-600 hover:rounded-lg hover:shadow-sm rounded-sm px-0 '>
+                                                    <NavLink  className="px-3" to={link.to}><li onClick={ ()=> {SetSideBar(false)}} className='text-white flex text-lg font-sans font-bold list-none gap-2 py-2 hover:bg-blue-600 hover:rounded-lg hover:shadow-sm rounded-sm px-0 '>
                                                         <span className=' text-2xl'>{link.icon}</span>{link.label}</li></NavLink>
                                                 ))
                                             }
