@@ -12,11 +12,12 @@ import ReactImg from '../../../assets/ReposImages/React1.png'
 import Php from '../../../assets/ReposImages/Php.png'
 import Scss from '../../../assets/ReposImages/Scss.webp'
 import Html from '../../../assets/ReposImages/Html.jpg'
+import GithubRepoImage from '../../../assets/ReposImages/githubRepoImage.jpg'
 import Crypto from '../../../assets/ReposImages/Crypto.webp'
 import { toast, ToastContainer } from 'react-toastify';
 import { BsSearchHeart } from "react-icons/bs";
 import ShimmerUI from "../../ShimmerUI";
-import GithubRepoImage from '../../../assets/GithubRepoImage.jpg'
+
 
 import { LuLink } from "react-icons/lu";
 import { FaGithub } from "react-icons/fa";
