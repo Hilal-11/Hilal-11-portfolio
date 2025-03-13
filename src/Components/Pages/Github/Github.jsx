@@ -16,12 +16,16 @@ import Crypto from '../../../assets/ReposImages/Crypto.webp'
 import { toast, ToastContainer } from 'react-toastify';
 import { BsSearchHeart } from "react-icons/bs";
 import ShimmerUI from "../../ShimmerUI";
+import GithubRepoImage from '../../../assets/GithubRepoImage.jpg'
+
+import { LuLink } from "react-icons/lu";
+import { FaGithub } from "react-icons/fa";
 const Github = () => {
 
     function searchRepository(quary , repo) {
         return repo.filter((item) => item?.name?.toLowerCase()?.includes(quary?.toLowerCase()))
     }
-    const images = [Crypto , C , DSA,  DSA , Cpp , Html , Crypto , Java , Javascript, Javascript2 ,Php , ReactImg, ReactImg , ReactImg ,GlobeGif , GlobeGif , Scss , Html];
+    const images = [Crypto , C , GithubRepoImage,  DSA , Cpp , Html , Crypto , Java , Javascript, Javascript2 ,Php , ReactImg, GithubRepoImage , GithubRepoImage ,GlobeGif , GithubRepoImage , Scss , Html ,GithubRepoImage,GithubRepoImage,GithubRepoImage,GithubRepoImage,GithubRepoImage,GithubRepoImage,GithubRepoImage,GithubRepoImage,GithubRepoImage,GithubRepoImage,GithubRepoImage,GithubRepoImage,GithubRepoImage,GithubRepoImage ];
     const [shimmer , setShimmer] = useState(true)
     const [repository , setRepository] = useState([]);
     const [filteredRepo , setFilteredRepo] = useState(null);
@@ -65,8 +69,13 @@ const Github = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2  justify-between gap-2">
                 <div className=" h-auto rounded-xl py-5 lg:py-20">
                     <h1 className=" text-3xl lg:text-5xl xl:text-7xl poppins-bolder">
-                        <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text ">Master</span> Modern Web Development <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">with me</span>
+                        <span>Explore the </span><span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text ">Github</span> Repositories, Code, Projects and Code Documentation<span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text flex items-center space-x-4">
+                            
+                            <Link to="https://github.com/Hilal-11" className="flex items-center space-x-4">
+                            <span className="text-slate-700 text-6xl px-4"><LuLink /></span> Hilal-11 <span className="text-slate-700 text-6xl"><FaGithub /></span></Link></span>
+                            
                     </h1>
+                    
                 <br /> 
                     <p className='my-2 text-md text-justify poppins-bold'>I leverage the latest technologies like <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text'>Three.js</span>, <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text'>WebGL,</span> and <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text'>Framer Motion</span> to create immersive 3D web experiences that captivate users and elevate digital storytelling. From interactive 3D models to dynamic animations, I bring cutting-edge visuals to life on the web, ensuring seamless performance across devices.</p>
                 <div className="flex justify-evenly flex-wrap my-8 gap-4">  
