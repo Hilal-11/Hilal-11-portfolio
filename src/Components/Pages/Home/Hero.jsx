@@ -40,7 +40,7 @@ function Home() {
           </h1>
         <br /> 
           <p className='my-2 text-md text-justify poppins-bold'>I leverage the latest technologies like <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text'>Three.js</span>, <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text'>WebGL,</span> and <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text'>Framer Motion</span> to create immersive 3D web experiences that captivate users and elevate digital storytelling. From interactive 3D models to dynamic animations, I bring cutting-edge visuals to life on the web, ensuring seamless performance across devices.</p>
-          <div className='z-10 lg:flex justify-evenly py-10 lg:py-20 gap-20 lg:space-y-0 space-y-6 text-lg'>
+          <div className='z-10 lg:flex lg:flex-nowrap md:flex-wrap justify-center py-10 lg:py-20 gap-10 lg:space-y-0 space-y-6 text-md '>
               <motion.button
                 initial={{
                   opacity: 0,
@@ -68,9 +68,9 @@ function Home() {
                   ease: 'easeInOut'
                 }}
                 
-              onClick={() => { navigate('/FreatureProjects') }} className='bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 w-full py-4 rounded-md flex justify-center gap-6 duration-500 poppins-bolder'
+              onClick={() => { navigate('/FreatureProjects') }} className='px-2 bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 w-full py-4 rounded-md flex justify-center gap-6 duration-500 poppins-bolder'
 
-                >Get Free Projects<span className='text-3xl'><SiVercel /></span></motion.button>
+                >Get Free Projects<span className='lg:none text-3xl'><SiVercel /></span></motion.button>
                 
                 <motion.button
                    whileHover={{
@@ -98,9 +98,9 @@ function Home() {
                     duration: 0.5,
                     ease: 'easeInOut'
                   }}
-                onClick={() => { navigate('/Github')}} className='w-full py-4 rounded-md bg-grad bg-gradient-to-r from-indigo-500 flex justify-center gap-6 items-center hover:slale-[1.2] duration-500 poppins-bolder'
+                onClick={() => { navigate('/Github')}} className='px-2 w-full py-4 rounded-md bg-grad bg-gradient-to-r from-indigo-500 flex justify-center gap-6 items-center hover:slale-[1.2] duration-500 poppins-bolder '
  
-                >  Explore Repositorise<span className='text-3xl'><FaGithub /></span></motion.button>
+                >Repositorise<span className='text-3xl'><FaGithub /></span></motion.button>
               </div>
       </div>
       <motion.div
