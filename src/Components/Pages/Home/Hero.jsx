@@ -68,7 +68,7 @@ function Home() {
                   ease: 'easeInOut'
                 }}
                 
-              onClick={() => { navigate('/FreatureProjects') }} className='px-2 bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 w-full py-4 rounded-md flex justify-center gap-6 duration-500 poppins-bolder'
+              onClick={() => { navigate('/FreatureProjects') }} className='px-2 bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 w-full py-4 rounded-md flex justify-center items-center gap-6 duration-500 poppins-bolder text-center'
 
                 >Get Free Projects<span className='lg:none text-3xl'><SiVercel /></span></motion.button>
                 

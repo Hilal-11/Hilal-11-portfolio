@@ -1,29 +1,20 @@
 import React from 'react'
-import hilalImage from '../../../assets/hilalHimage.png'
 import WebTechHorzontalInfinite from './WebTechHorzontalInfinite';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
-import { aboutSkillsIcons } from '../../Config'
 function DeveloperInfo() {
   return (
     <>  
         <p className='text-6xl font-bold bg-gradient-to-r from-indigo-500 text-transparent bg-clip-text xl:text-8xl text-center'>Hi, I'm Hilal</p>
         <p className=' text-3xl font-extrabold whitespace-pre-wrap lg:text-5xl xl:text-5xl bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 text-transparent bg-clip-text'>A passionate Full-Stack Web Developer dedicated to building intuitive, scalable, and efficient digital solutions.</p>
-        <div className=' pb-4 px-0 lg:px-5 my-16 w-full h-auto rounded-xl bg-slate-900 shadow-2xl shadow-blue-600  lg:grid lg:grid-cols-2 gap-10 '>
-
+        <div className=' pb-4 px-0 lg:px-5 my-16 w-full h-auto rounded-xl bg-slate-900 shadow-2xl shadow-blue-600  lg:grid lg:grid-cols-2 gap-10 items-center'>
                   
-                <div className='relative flex justify-center h-[300px]'>
-                    <img className=' cursor-pointer z-50  blur-[4px] hover:blur-0 hover:scale-[1.4] duration-300 rounded-t-xl' src={ hilalImage } alt="" />
-
-                    <div className='lg:py-10 py-5 px-4 flex lg:gap-12 gap-6 flex-wrap justify-evenly lg:text-5xl text-2xl text-gray-600 absolute z-0 top-30'>
-                    {
-                      aboutSkillsIcons.map((icon) => (
-                        <span key={icon.id} className=' cursor-pointer z-0 bouncing_animation'>{icon.icon}</span>
-                      ))
-                    }
-                  </div>
+                <div className='hidden lg:flex justify-center h-[300px] items-center '>
+                    <div className='lg:py-10 py-5 px-4 flex lg:gap-12 gap-6 flex-wrap justify-evenly lg:text-5xl text-2xl text-gray-600  '>
+                        <img className='w-2/3' src="https://res.cloudinary.com/kentcdodds-com/image/upload/w_900,q_auto,f_auto/kentcdodds.com/illustrations/kody/kody_onewheeling_flying_red" alt="" />
+                    </div>
                 </div>
-            <div className='lg:h-[400px] h-[320px]'>
+            <div className='lg:h-[500px] h-[450px]'>
                 <SyntaxHighlighter className='rounded-2xl h-full overflow-auto' style={dark} language="javascript">
                     {`import React from 'react'
 import Font, { Text } from 'react-font'
@@ -31,7 +22,6 @@ import { FaGithub } from "react-icons/fa";
 import { ImLinkedin } from "react-icons/im";
 import { SiLeetcode } from "react-icons/si";
 import { FaWhatsappSquare } from "react-icons/fa";
-import hilalImage from '../../../assets/hilal1.png'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { dark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 function DeveloperInfo() {

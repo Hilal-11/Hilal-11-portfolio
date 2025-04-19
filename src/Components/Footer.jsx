@@ -30,7 +30,7 @@ export const Footer = () => {
         <div className='w-full lg:w-[40%]'>
           <div className=' flex justify-evenly items-center flex-wrap lg:flex-nowrap  '>
             <div className='lg:text-left text-center '>
-              <span className='poppins-bolder text-2xl lg:text-3xl'>Web Mastery</span>
+              <span className='poppins-bolder text-2xl lg:text-3xl'>Hilal-11</span>
             </div>
             <div className='my-10 flex justify-center px-4 py-1 items-center w-[90px] rounded-full overflow-hidden ring-4 shadow-2xl shadow-blue-600'>
               <img className='w-[60px] rounded-full' src={hilal3} alt="" />
