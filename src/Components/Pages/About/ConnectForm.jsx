@@ -1,11 +1,11 @@
 import React from "react";
-import sideImage from '../../../assets/sideImage.avif'
+import sideImage from '../../../assets/ReposImages/Hilal-11.png'
 const ConnectForm = () => {
 
     return (
         <div className="py-20 flex flex-wrap lg:flex-nowrap h-auto gap-10"> 
             <div className="w-full lg:w-[40%] shadow-2xl shadow-black">
-                <img className="h-[500px] w-full rounded-xl" src={sideImage} alt="Error not found "></img>
+                <img className="h-auto w-full rounded-xl" src={sideImage} alt="Error not found "></img>
             </div>
             <div className="w-full lg:w-[60%] h-auto rounded-xl bg-slate-800 px-3 lg:px-10 py-8 lg:py-10 shadow-2xl shadow-black">
                 <form className=" space-y-4">

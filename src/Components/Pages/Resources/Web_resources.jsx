@@ -8,6 +8,7 @@ import jsIcon from '../../../assets/ReposImages/javascriptIcon.png';
 import tsIcon from '../../../assets/ReposImages/typescript.png';
 import reactIcon from '../../../assets/ReposImages/react.png';
 import nodeIcon from '../../../assets/ReposImages/nodejs.png';
+import Hilal_11 from '../../../assets/ReposImages/Hilal-11.png'
 const Web_resources = () => {
 
     function findUserQuaryVideo(quary , data) {
@@ -32,14 +33,14 @@ const Web_resources = () => {
     }
     
     return (
-        <div className="w-full h-auto px-4">
+        <div className="w-full h-auto px-4 my-10 lg:my-20">
             <div className="relative w-full lg:h-[500px] h-[300px] bg-slate-800 shadow-2xl rounded-xl flex justify-center">
             <img className="lg:w-[150px] lg:h-[150px] w-[60px] h-[60px] absolute lg:left-20 lg:bottom-20 left-5 bottom-10" src={jsIcon}></img>
             <img className="lg:w-[150px] lg:h-[150px] w-[60px] h-[60px] absolute lg:right-20 lg:top-10 right-5 top-5" src={tsIcon}></img>
             <img className="lg:w-[150px] lg:h-[150px] w-[60px] h-[60px] absolute lg:right-52 lg:bottom-20 right-5 bottom-10" src={reactIcon}></img>
             <img className="lg:w-[150px] lg:h-[150px] w-[60px] h-[60px] absolute lg:left-60 left-5 " src={nodeIcon}></img>
             <div>
-                <img className="h-full" src="https://media.licdn.com/dms/image/v2/D5612AQEhKguQVjXr4g/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1693971265825?e=2147483647&v=beta&t=_eC7LaTUoFGro7jGKXH19Mjjjlw6SgzIqM2QcLbLhP8" alt="" />
+                <img className="h-full mix-blend-multiply" src={Hilal_11} alt="" />
                     </div>
                 <div className="absolute w-[88%] h-[60px] lg:h-[80px] rounded-xl -bottom-7 lg:-bottom-10 bg-slate-900"> 
              

@@ -1,5 +1,5 @@
 import React from "react";
-import GlobeGif from '../../../assets/Globe.gif'
+import GlobeGif from '../../../assets/ReposImages/Hilal-11.png'
 import { Link  } from 'react-router-dom'
 import { useState , useEffect } from 'react'
 import Cpp from '../../../assets/ReposImages/Cpp.jpg'
@@ -85,9 +85,11 @@ const Github = () => {
                 </div>
                 </div>
                 <div className=" rounded-xl  lg:py-16 h-auto flex justify-center">
-                    <img className="w-auto lg:w-[800px]" src={GlobeGif} alt="" />
+                    <img className=" w-auto lg:w-[700px] rounded-md" src={GlobeGif} alt="" />
                 </div>
             </div>
+            <br />
+
             <div className="relative w-full lg:w-[80%] mx-auto">
                         <input 
                             type="text"
