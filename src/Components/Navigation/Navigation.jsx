@@ -9,7 +9,6 @@ import {navLinksScreen} from '../Config'
 import { ToastContainer, toast } from 'react-toastify';
 function Navigation() {
     const navigate = useNavigate('')
-    const[light , setLight] = useState(false);
     const [isSideBar , SetSideBar] = useState(false);
     function menuBarHandler () {
         SetSideBar(true);
@@ -20,7 +19,10 @@ function Navigation() {
     }
   return (
     <div>
-        <nav className=' border-b border-slate-700 z-50 flex justify-between px-4 items-center lg:py-4 py-3 bg-[#010B13] text-white fixed left-0 right-0 top-0 '>
+        <nav className=' border-slate-700 z-50 flex justify-between px-4 items-center lg:py-4 py-3 text-white fixed left-0 right-0 top-0 '
+        style={{
+            background : 'hsla(234 , 91% , 4%)',
+        }}>
                   <div className=' flex justify-between w-[80%] lg:mx-auto'>
                     <div className='flex items-center '>
                             <p onClick={() => { navigate('/') }} className='poppins-bolder lg:text-sm'><span className='bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 text-transparent bg-clip-text poppins-bolder text-2xl lg:text-3xl'>Hilal</span>-11</p>
